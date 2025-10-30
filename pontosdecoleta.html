@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pontos de Coleta - Descarte Consciente</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#499c57",
+            "background-light": "#f8fcf9",
+            "background-dark": "#102213",
+            "text-light": "#0d1c10",
+            "text-dark": "#e7f4e9",
+            "card-light": "#ffffff",
+            "card-dark": "#1a2c1d",
+            "chip-light": "#e7f4e9",
+            "chip-dark": "#2c4030",
+            "chip-active-light": "#499c57",
+            "chip-active-dark": "#b4d8bb",
+            "chip-active-text-light": "#ffffff",
+            "chip-active-text-dark": "#0d1c10"
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-screen w-full flex-col group/design-root overflow-hidden">
+<!-- Top App Bar -->
+<header class="flex items-center p-4 pb-2 justify-between bg-background-light dark:bg-background-dark z-20">
+<button class="flex size-12 shrink-0 items-center justify-center text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center text-text-light dark:text-text-dark">Pontos de Coleta</h1>
+<div class="size-12 shrink-0"></div> <!-- Spacer -->
+</header>
+<!-- Filter Chips -->
+<div class="bg-background-light dark:bg-background-dark z-20">
+<div class="flex gap-2 p-4 pt-2 overflow-x-auto whitespace-nowrap">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-active-light dark:bg-chip-active-dark px-5">
+<p class="text-sm font-medium leading-normal text-chip-active-text-light dark:text-chip-active-text-dark">Todos</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-light dark:bg-chip-dark px-5">
+<p class="text-sm font-medium leading-normal text-text-light dark:text-text-dark">Recicláveis</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-light dark:bg-chip-dark px-5">
+<p class="text-sm font-medium leading-normal text-text-light dark:text-text-dark">Eletrônicos</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-light dark:bg-chip-dark px-5">
+<p class="text-sm font-medium leading-normal text-text-light dark:text-text-dark">Orgânicos</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-chip-light dark:bg-chip-dark px-5">
+<p class="text-sm font-medium leading-normal text-text-light dark:text-text-dark">Hospitalar</p>
+</button>
+</div>
+</div>
+<!-- Map Area with Floating Elements -->
+<main class="absolute inset-0 flex flex-1 flex-col pt-[124px]">
+<div class="relative flex-1 @container">
+<!-- Map Background -->
+<div class="bg-cover bg-center flex h-full flex-col justify-between p-4" data-alt="Interactive map showing collection points in Itapororoca, PB" data-location="Itapororoca, PB" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdvTs7aXvpWTt7HsBLqfiSeoa5jIIJr7EJYSMIbwnMujzbefb1iazKi8BYmj2zxKtt6N5HSXlM6R2VOwwH4Q0o1s7idFiIg34EYom1GwiuS23YTTQTesPQptEjXfitZ-bHoI5Evs9A1v71YrIWgjKrAjb4DwZT7xACr6x4ysbgQoUNZCz3xKxIROnDK_rLih5356aJNgkp7usjyJj5ODDWv1Co6DU-h_bj9_ZxJeCncPBtHMfdlenW_WBctI1U92YjM1xzA009bD_-");'>
+<!-- Search Bar -->
+<label class="flex flex-col min-w-40 h-12">
+<div class="flex w-full flex-1 items-stretch rounded-full h-full shadow-lg">
+<div class="text-primary flex border-none bg-card-light dark:bg-card-dark items-center justify-center pl-4 rounded-l-full border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-card-light dark:bg-card-dark focus:border-none h-full placeholder:text-primary/70 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Buscar endereço ou local" value=""/>
+</div>
+</label>
+<!-- Floating Action Buttons -->
+<div class="flex flex-col items-end gap-3 self-end">
+<div class="flex flex-col gap-0.5">
+<button class="flex size-12 items-center justify-center rounded-t-full bg-card-light dark:bg-card-dark shadow-lg">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">add</span>
+</button>
+<button class="flex size-12 items-center justify-center rounded-b-full bg-card-light dark:bg-card-dark shadow-lg">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">remove</span>
+</button>
+</div>
+<button class="flex size-14 items-center justify-center rounded-full bg-card-light dark:bg-card-dark shadow-lg">
+<span class="material-symbols-outlined text-primary text-2xl">my_location</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Sheet -->
+<div class="absolute bottom-0 left-0 h-full w-full flex-col justify-end items-stretch bg-black/40 dark:bg-black/60 flex z-30 pointer-events-none">
+<div class="flex flex-col items-stretch bg-background-light dark:bg-background-dark rounded-t-lg pointer-events-auto">
+<button class="flex h-6 w-full items-center justify-center pt-2">
+<div class="h-1.5 w-10 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+</button>
+<div class="flex flex-col gap-4 p-5 pb-8">
+<div class="flex flex-col gap-1">
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark">Centro de Coleta Municipal</h2>
+<p class="text-sm text-gray-600 dark:text-gray-400">R. João Pessoa, 123 - Centro, Itapororoca - PB</p>
+<p class="text-sm text-primary dark:text-primary/90 font-medium">Aberto: 08:00 - 17:00</p>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-base font-semibold text-text-light dark:text-text-dark">Tipos de resíduos aceitos:</h3>
+<div class="flex gap-3">
+<div class="flex items-center gap-2">
+<div class="flex size-8 items-center justify-center rounded-full bg-chip-light dark:bg-chip-dark">
+<span class="material-symbols-outlined text-sm text-primary">recycling</span>
+</div>
+<span class="text-xs text-text-light dark:text-text-dark">Recicláveis</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex size-8 items-center justify-center rounded-full bg-chip-light dark:bg-chip-dark">
+<span class="material-symbols-outlined text-sm text-primary">battery_horiz_075</span>
+</div>
+<span class="text-xs text-text-light dark:text-text-dark">Eletrônicos</span>
+</div>
+</div>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] gap-2 mt-2">
+<span class="material-symbols-outlined">directions</span>
+            Obter Direções
+          </button>
+</div>
+</div>
+</div>
+</div>
+</body></html>
