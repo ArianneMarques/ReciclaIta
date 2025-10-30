@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Descarte Consciente – Itapororoca PB</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#4CAF50", // Verde Principal
+                        "secondary": "#81D4FA", // Azul-Claro
+                        "background-light": "#F5F5DC", // Bege (Tom Terroso)
+                        "background-dark": "#2c2a23",
+                        "text-light": "#333333",
+                        "text-dark": "#e5e5d3",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#3a3830",
+                        "border-light": "#D2B48C", // Marrom Claro (Tom Terroso)
+                        "border-dark": "#5e4e3c",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 shadow-sm shadow-black/5">
+<div class="flex size-10 shrink-0 items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">recycling</span>
+</div>
+<h1 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 ml-2">Descarte Consciente</h1>
+</header>
+<!-- HeaderImage -->
+<div class="px-4 pt-4">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-lg min-h-[220px]" data-alt="Paisagem natural da região de Itapororoca com vegetação verde exuberante sob um céu claro." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCgbzNjOTCodpzn3F5GPJmid7B4SxqnzgWA_W-AyA0iwJWA46fM1XPdn6_sAhVgGYPkz9ZbC52DxkRT27gd1HPSpmG2uSPP6CanSd6eISBdgeqp04HJlC5goMjWuYVHtXV03WQ9v33cwpEUqHjbFu1pq_rHt5Ds-1NanmMIFakst5sQCO6-i-IY1FxZ59z6tuiWhCvpHGRtfCKmmKc84qTZZFxqcwyNPQe_CgpUAfQ5DoQl_uBMJ1sEYX_v2uwKKz1vNWMnBXHgkTbR");'>
+<div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent p-6 flex flex-col justify-end">
+<h2 class="text-white tracking-tight text-[32px] font-bold leading-tight">Junte-se a nós por uma Itapororoca mais limpa!</h2>
+</div>
+</div>
+</div>
+<!-- BodyText / Card de Apresentação -->
+<div class="p-4">
+<div class="bg-card-light dark:bg-card-dark rounded-lg p-6 border border-border-light dark:border-border-dark shadow-sm">
+<h3 class="text-primary text-xl font-bold leading-tight mb-2">Sobre o Projeto</h3>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-relaxed">
+                    O projeto Descarte Consciente tem como objetivo educar e engajar nossa comunidade na separação correta dos resíduos, promovendo a reciclagem e a sustentabilidade para um futuro mais verde em Itapororoca.
+                </p>
+</div>
+</div>
+<!-- Stats / Contador Ambiental -->
+<div class="px-4 pb-2">
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight mb-4 px-2">Nosso Impacto Positivo</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-2 rounded-lg p-4 bg-secondary/20 dark:bg-secondary/10 border border-secondary/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">scale</span>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal"> Meta de Material Reciclado</p>
+</div>
+<p class="text-text-light dark:text-text-dark tracking-light text-3xl font-bold leading-tight text-right">1,250 kg</p>
+</div>
+<div class="flex flex-col gap-2 rounded-lg p-4 bg-secondary/20 dark:bg-secondary/10 border border-secondary/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">forest</span>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Meta de Árvores Salvas</p>
+</div>
+<p class="text-text-light dark:text-text-dark tracking-light text-3xl font-bold leading-tight text-right">85</p>
+</div>
+<div class="col-span-1 sm:col-span-2 flex flex-col gap-2 rounded-lg p-4 bg-secondary/20 dark:bg-secondary/10 border border-secondary/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">co2</span>
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Emissões de CO² Evitadas</p>
+</div>
+<p class="text-text-light dark:text-text-dark tracking-light text-3xl font-bold leading-tight text-right">970 kg</p>
+</div>
+</div>
+</div>
+<!-- Seção de Dicas Educativas -->
+<div class="p-4">
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight mb-4 px-2">Dicas para um Descarte Correto</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col items-center text-center p-4 rounded-lg bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center justify-center size-14 bg-primary/10 rounded-full mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">liquor</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-semibold">Vidro</p>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm">Lave e descarte em coletores específicos.</p>
+</div>
+<div class="flex flex-col items-center text-center p-4 rounded-lg bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center justify-center size-14 bg-primary/10 rounded-full mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">recycling</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-semibold">Plástico</p>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm">Separe garrafas, potes e embalagens.</p>
+</div>
+<div class="flex flex-col items-center text-center p-4 rounded-lg bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center justify-center size-14 bg-primary/10 rounded-full mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">description</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-semibold">Papel</p>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm">Jornais, caixas e revistas devem estar secos.</p>
+</div>
+<div class="flex flex-col items-center text-center p-4 rounded-lg bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark shadow-sm">
+<div class="flex items-center justify-center size-14 bg-primary/10 rounded-full mb-3">
+<span class="material-symbols-outlined text-primary text-3xl">shopping_cart</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-semibold">Metal</p>
+<p class="text-text-light/80 dark:text-text-dark/80 text-sm">Latas de alumínio e aço são recicláveis.</p>
+</div>
+</div>
+</div>
+<!-- Botões de Ação -->
+<div class="px-4 py-4 flex flex-col sm:flex-row gap-4">
+<button class="flex-1 w-full bg-primary text-white text-base font-bold py-4 px-6 rounded-full shadow-lg hover:bg-primary/90 transition-colors duration-300 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">location_on</span>
+                Pontos de Coleta
+            </button>
+<button class="flex-1 w-full bg-primary/20 dark:bg-primary/30 text-primary dark:text-primary-light text-base font-bold py-4 px-6 rounded-full hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors duration-300">
+                Saiba Mais
+            </button>
+</div>
+<!-- Footer -->
+<footer class="mt-auto px-4 py-6 text-center bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">
+<p class="text-text-light/70 dark:text-text-dark/70 text-xs">
+                Projeto Descarte Consciente – Prefeitura Municipal de Itapororoca<br/>• Secretaria de Meio Ambiente •
+            </p>
+</footer>
+</div>
+</body></html>
